@@ -1,10 +1,11 @@
-macOS_CLI_Cleaning
-Cleaning Hard Drive &amp; Purging Unneeded Files
----
-
 # **Automating System Management with Bash: A Hands-on Approach**  
 
 ## **Harnessing the Power of Bash for Workflow Efficiency**  
+
+```
+macOS_CLI_Cleaning
+Cleaning Hard Drive &amp; Purging Unneeded Files
+```
 
 As a developer, strategist, and systems thinker, I’m always looking for ways to optimize workflows and automate repetitive tasks. While high-level scripting languages like Python and automation tools like Ansible are excellent for infrastructure management, **Bash remains one of the most efficient and lightweight tools for system administration, automation, and task execution.**  
 
