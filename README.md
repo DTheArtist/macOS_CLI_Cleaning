@@ -1,9 +1,6 @@
 # macOS_CLI_Cleaning
 Cleaning Hard Drive &amp; Purging Unneeded Files
 ---
-Here's a **draft blog post** highlighting your **Bash expertise** for your professional portfolio. Let me know if you’d like any adjustments! 🚀  
-
----
 
 # **Automating System Management with Bash: A Hands-on Approach**  
 
