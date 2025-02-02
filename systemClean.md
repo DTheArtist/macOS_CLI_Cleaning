@@ -5,8 +5,8 @@ Here are some scripts to remove unneeded files automatically.
 You can delete macOS system caches safely:
 
 bash
-```
 #!/bin/bash
+```
 echo "Cleaning System Caches..."
 sudo rm -rf ~/Library/Caches/*
 sudo rm -rf /Library/Caches/*
@@ -16,17 +16,18 @@ echo "✅ Caches Cleared"
 ```
 
 # 2️ Remove Large & Old Files
-This script deletes files over 30 days old from Downloads, Trash, and Temp folders:
+This script deletes files over 365 days old from Downloads, Trash, and Temp folders:
 
 bash
-Copy
-Edit
 #!/bin/bash
+```
 echo "Deleting old files..."
-find ~/Downloads -type f -mtime +30 -exec rm -v {} \;
-find ~/.Trash -type f -mtime +30 -exec rm -v {} \;
-find /private/tmp -type f -mtime +30 -exec rm -v {} \;
+find ~/Downloads -type f -mtime +365 -exec rm -v {} \;
+find ~/.Trash -type f -mtime +365 -exec rm -v {} \;
+find /private/tmp -type f -mtime +365 -exec rm -v {} \;
 echo "✅ Old files deleted"
+```
+
 3️⃣ Delete Large Files (Over 500MB)
 bash
 Copy
