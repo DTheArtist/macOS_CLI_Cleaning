@@ -36,7 +36,25 @@ echo "Finding large files over 500MB..."
 find ~ -type f -size +500M -exec ls -lh {} \;
 echo "Manually review and delete if necessary."
 ```
-To delete them automatically:
+* Optional: sort -rh -k5: Sorts by file size in descending order. *
+```
+find ~ -type f -size +500M -exec ls -lh {} + | sort -rh -k5
+```
+
+After running the command, carefully review the files.
+If you recognize files you no longer need, take note of their paths.
+
+* To delete them Maunally:
+* Delete Specific Files One by One
+To remove a specific file, use:
+
+bash
+```
+rm -i /path/to/file
+```
+
+
+* To delete them automatically:
 
 bash
 ```
