@@ -43,7 +43,7 @@ bash
 find ~ -type f -size +500M -delete
 ```
 
-#4️ Clean Log Files
+# 4️ Clean Log Files
 bash
 #!/bin/bash
 ```
@@ -51,3 +51,5 @@ echo "Cleaning log files..."
 sudo rm -rf /var/log/*
 echo "✅ Logs cleaned"
 ```
+
+
