@@ -28,25 +28,26 @@ find /private/tmp -type f -mtime +365 -exec rm -v {} \;
 echo "✅ Old files deleted"
 ```
 
-3️⃣ Delete Large Files (Over 500MB)
+# 3 Delete Large Files (Over 500MB)
 bash
-Copy
-Edit
 #!/bin/bash
+```
 echo "Finding large files over 500MB..."
 find ~ -type f -size +500M -exec ls -lh {} \;
 echo "Manually review and delete if necessary."
+```
 To delete them automatically:
 
 bash
-Copy
-Edit
+```
 find ~ -type f -size +500M -delete
-4️⃣ Clean Log Files
+```
+
+#4️ Clean Log Files
 bash
-Copy
-Edit
 #!/bin/bash
+```
 echo "Cleaning log files..."
 sudo rm -rf /var/log/*
 echo "✅ Logs cleaned"
+```
